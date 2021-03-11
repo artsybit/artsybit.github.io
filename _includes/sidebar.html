@@ -1,0 +1,61 @@
+<span class="mobile btn-mobile-menu">
+	<i class="icon icon-list btn-mobile-menu__icon"></i>
+	<i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+<header class="panel-cover" style="background-image: url({{ site.baseurl }}/assets/img/cover.jpg)">
+	<div class="panel-main">
+		<div class="panel-main__inner panel-inverted">
+		<div class="panel-main__content">
+			<a href="{{ site.baseurl }}/#view" title="link to {{ site.title }} home page" class="menu-button">
+				<img src="{{ site.baseurl }}/assets/img/logo1024x512.png" class="user-image" alt="VoyChicago logo">
+				<h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
+			</a>
+			<hr class="panel-cover__divider">
+			<p class="panel-cover__description">{{ site.description }}</p>
+			<hr class="panel-cover__divider panel-cover__divider--secondary">
+
+		<div class="navigation-wrapper">
+			<nav class="cover-navigation navigation--primary">
+				<ul class="navigation">
+					<li class="navigation__item">
+						<a href="{{ site.baseurl }}/near-west-side/#view" title="link to near west side location" class="menu-button">link1</a>
+					</li>
+					<br>
+					<li class="navigation__item">
+						<a href="{{ site.baseurl }}/ukrainian-village/#view" title="link to ukrainian village location" class="menu-button">link2</a>
+					</li>
+					<br>
+					<li class="navigation__item">
+						<a href="{{ site.baseurl }}/gallery/#view" title="link to {{ site.title }} gallery" class="menu-button">gallery</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<br>
+			
+			<nav class="cover-navigation navigation--social">
+				<ul class="navigation">
+
+					<!-- Email -->
+					{% if site.author.email %}
+					<li class="navigation__item">
+						<a href="mailto:{{ site.author.email }}" title="email {{ site.author.email }}" target="_blank">
+							<i class="icon icon-mail"></i>
+							<span class="label">Email</span>
+						</a>
+					</li>
+					{% endif %}
+
+				</ul>
+			</nav>
+
+		</div><!-- end navigation-wrapper -->
+
+		</div>
+		</div>
+
+    <div class="panel-cover--overlay"></div>
+	
+	</div><!-- end panel-main -->
+</header>

@@ -1,0 +1,70 @@
+<footer class="footer">
+	<span id="#desktop-footer" class="footer__info">
+		<table width="100%">
+			<tr>
+				<!--td colspan="2" width="50%">LOCATIONS:</td-->
+				<td style="text-align: right;">CONTACT</TD>
+			</tr>
+			<tr>
+				<!--td>
+					<div>
+						Near West Side<br>
+						214 S Wood Street<br>
+						Chicago, IL 60612
+					</div>
+				</td>
+				<td>
+					<div>
+						Ukrainian Village<br>
+						2235 W Cortez Street<br>
+						Chicago, IL 60622
+					</div>
+				</td-->
+				<td style="text-align: right;">
+					<div>
+						Adi Pacurar<br>
+						(123) 123-1234<br>
+						{{ site.author.email }}
+					</div>
+				</td>
+			</tr>
+		</table>
+	</span>
+	
+	<span id="#mobile-footer" class="footer__info">
+		<table width="100%">
+			<tr>
+				<td>LOCATIONS:</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						214 S Wood Street<br>
+						Chicago, IL 60612
+					</div>
+					<br>
+					<div>
+						2235 W Cortez Street<br>
+						Chicago, IL 60622
+					</div>
+					<br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>CONTACT:</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						Nadiya Voytanovych<br>
+						(708) 983-3284<br>
+						{{ site.author.email }}
+					</div>
+				</td>
+			</tr>
+		</table>
+	</span>
+	<br>
+	<span class="footer__copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</span>
+</footer>

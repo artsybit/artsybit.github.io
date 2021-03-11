@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+
+	<body>
+		{% include sidebar.html %}
+
+		<div class="content-wrapper">
+			<div class="content-wrapper__inner">
+			{{ content | markdownify }}
+			
+			<!--script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script-->
+			<script src="{{ site.baseurl }}/assets/js/jquery.justifiedGallery.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/lightgallery.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/lg-thumbnail.min.js"></script>
+			<!--script src="{{ site.baseurl }}/assets/js/lg-zoom.min.js"></script-->
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#wood-gallery").justifiedGallery();
+				});
+				lightGallery(document.getElementById('wood-gallery'), { thumbnail: false });
+				
+				$(document).ready(function(){
+					$("#cortez-gallery").justifiedGallery();
+				});
+				lightGallery(document.getElementById('cortez-gallery'), { thumbnail: false }); 
+			</script>
+		</div>
+
+		{% include footer.html %}
+		</div>
+	</body>
+</html>

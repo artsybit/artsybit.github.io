@@ -1,0 +1,33 @@
+# Site settings
+title: ArtsyBit
+description: >- # this means to ignore newlines until "baseurl:"
+  Site description here
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://artsybit.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: ':title/'
+
+google-analytics: "UA-129043396-1"
+
+author:
+  name: 'Adi Pacurar'
+  email: mathybit@gmail.com
+
+# Build settings
+destination: _site
+markdown: kramdown
+highlighter: rouge
+plugins: []
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
+include: [_pages]
