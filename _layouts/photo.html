@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-	{% include head.html %}
+{% include head.html %}
 
-	<body>
-		{% include sidebar.html %}
+<body>
+	{% include sidebar.html %}
 
-		<div class="content-wrapper">
-			<div class="content-wrapper__inner">
+	<div class="content-wrapper">
+		<div class="content-wrapper__inner">
 			{{ content | markdownify }}
 			
 			<!--script src="{{ site.baseurl }}/assets/js/jquery-3.3.1.min.js"></script-->
@@ -28,6 +28,6 @@
 		</div>
 
 		{% include footer.html %}
-		</div>
-	</body>
+	</div>
+</body>
 </html>

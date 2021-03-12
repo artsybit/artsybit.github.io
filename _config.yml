@@ -1,12 +1,14 @@
 # Site settings
-title: ArtsyBit
+#
+name: Artsy Bit
+title: The Artsy Bit
 description: >- # this means to ignore newlines until "baseurl:"
-  Site description here
+  photography and music
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://artsybit.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: ':title/'
 
-google-analytics: "UA-129043396-1"
+#google-analytics: "UA-129043396-1"
 
 author:
   name: 'Adi Pacurar'
@@ -16,7 +18,9 @@ author:
 destination: _site
 markdown: kramdown
 highlighter: rouge
-plugins: []
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
 
 sass:
     sass_dir: _sass
@@ -31,3 +35,8 @@ kramdown:
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
 include: [_pages]
+
+# Paginate settings
+#
+paginate: 5
+paginate_path: /page:num/
