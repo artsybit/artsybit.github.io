@@ -36,9 +36,38 @@
 			
 			<nav class="cover-navigation navigation--social">
 				<ul class="navigation">
-
+					{% if site.author.instagram %}
+					<!-- Instagram -->
+					<li class="navigation__item">
+						<a href="https://www.instagram.com/{{ site.author.instagram }}" title="{{ site.author.instagram }} on Instagram" target="_blank">
+							<i class="icon icon-social-instagram"></i>
+							<span class="label">Instagram</span>
+						</a>
+					</li>
+					{% endif %}
+					
+					{% if site.author.linkedin %}
+					<!-- LinkedIn -->
+					<li class="navigation__item">
+						<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" title="{{ site.author.linkedin }} on Linkedin" target="_blank">
+							<i class="icon icon-social-linkedin"></i>
+							<span class="label">LinkedIn</span>
+						</a>
+					</li>
+					{% endif %}
+					
+					{% if site.author.github %}
+					<!-- GitHub -->
+					<li class="navigation__item">
+						<a href="https://www.github.com/{{ site.author.github }}" title="{{ site.author.github }} on GitHub" target="_blank">
+							<i class="icon icon-social-github"></i>
+							<span class="label">GitHub</span>
+						</a>
+					</li>
+					{% endif %}
+					
+					{% if site.author.emaildisabled %}
 					<!-- Email -->
-					{% if site.author.email %}
 					<li class="navigation__item">
 						<a href="mailto:{{ site.author.email }}" title="email {{ site.author.email }}" target="_blank">
 							<i class="icon icon-mail"></i>
@@ -46,7 +75,6 @@
 						</a>
 					</li>
 					{% endif %}
-
 				</ul>
 			</nav>
 
